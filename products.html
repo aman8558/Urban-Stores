@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>eCom website</title>
+</head>
+<body>
+  <header class="section-navbar">
+    <section class="top_txt">
+      <div class="head container">
+        <div class="head_txt">
+          <p>Free shipping, 7 days return policy</p>
+        </div>
+       <div class="sign_in_up">
+        <a href="#">SIGN IN</a>
+        <a href="#">SIGN UP</a>
+      </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="./images/logos1.png" alt="logo" class="logo" width="80%" height="auto">
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="products.html">Products</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link add-to-cart-button" id="cartValue" href="/addToCart.html"><i class="fa-solid fa-cart-shopping"></i> 0 </a></li>
+        </ul>
+
+      </nav>
+     
+    </div>
+  </header>
+  <!-- ========== Start hero section Section ========== -->
+ 
+  <!-- ========== End hero section Section ========== -->
+  <!-- ========== Start Extra Products Section ========== -->
+  <section>
+    <div class="container grid grid-three--cols">
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>End of Reason sale</p>
+          <h3>get extra 30% off</h3>
+          <a href="https://www.apple.com/in/macbook-pro/">show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+         <img src="./images/laptop.png" alt="">
+        </div>
+      </div>
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>End of Reason sale</p>
+          <h3>extra 40% off on boat products</h3>
+          <a href="https://www.amazon.in/boAt-Rockerz-550-Headphone-Aesthetics/dp/B08R7M1JM5/ref=sr_1_4?dib=eyJ2IjoiMSJ9.ihHuWhj4VG5vLH3vd4aoWTRJ_yYqqkN9Ke3AWTBSOV5hRqFGV2zz9mJGRM_yp0n4vzF3XLOufJMRYKO4xlUFfwjcpKiDplrz_PD-t1RH7j5Um7ii3OxdnoC0MCItfyptexnfEzsVHrhRMUpsOov5yDQHuZa09OE0_gdAX2eBdS5MYT_Yx0VzIK7HSMxpEZOuw1Qiq7oYfJA1EhNQPnpVzHABK6TQGAQnN3LYmpc21GU.qV2K-ZOWgk0fAnknPBzzApJaxTBUNRjW3KWYdPsg9U0&dib_tag=se&keywords=boat+headphones&qid=1719241148&sr=8-4">show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+         <img src="./images/boatheadphone1.png" alt="">
+        </div>
+      </div>
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>End of Reason sale</p>
+          <h3>extra 30% off on iphones</h3>
+          <a href="https://www.apple.com/in/shop/buy-iphone/iphone-15-pro">show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+         <img src="./images/iphone.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ========== End Extra Products  ========== -->
+
+  <!-- ========== Start Policy Section ========== -->
+  <section class="section-policy">
+    <div class="container grid grid-four--cols">
+      <div class="div-policy">
+         <div class="icons">
+          <i class="fa-solid fa-truck-fast"></i>
+         </div>
+         <div class="div-policy-text">
+          <p>All India shipping</p>
+          <p>Order above ₹1000</p>
+         </div>
+      </div>
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="div-policy-text">
+           <p>Easy 30 days return</p>
+           <p>return back within 7 days</p>
+        </div>
+      </div>
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>Money back guarantee</p>
+          <p>Guarantee within 30 days</p>
+        </div>
+      </div>
+      <div class="div-policy">
+         <div class="icons">
+          <i class="fa-solid fa-headset"></i>
+         </div>
+         <div class="div-policy-text">
+            <p>Easy online support</p>
+            <p>24/7 online support</p>
+         </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ========== End Policy Section ========== -->
+
+
+
+  <!-- ========== Start products Section ========== -->
+  <section class="section-products container">
+    <div class="">
+      <h2 class="section-common--heading">Checkout Urban Stores</h2>
+    </div>
+
+    <section class="container">
+      <div id="productContainer"></div>
+    </section>
+  </section>
+  <!-- ========== End products Section ========== -->
+  
+
+  <!-- ========== Start product tamplate Section ========== -->
+    <template id="productTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+         <span class="category"></span>
+         <div class="imageContainer">
+            <img class="productImage" src="" alt="">
+         </div>
+         <h2 class="productName"></h2>
+         <div class="productRating">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+         </div>
+         <p class="productDescription"></p>
+         <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+         </div>
+         <div class="productStockElement">
+          <p class="productProperty">Total Stocks available :</p>
+          <p class="productStock"></p>
+         </div>
+         <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces):</p>
+          <div class="stockElement">
+            <button class="cartDecrement">-</button>
+            <p class="productQuantity">1</p>
+            <button class="cartIncrement">+</button>
+          </div>
+         </div>
+         <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-plus" style="color: #74C0FC;"></i>Add to cart
+         </button>
+        </article>
+      </div>
+    </template>
+  <!-- ========== End product tamplate Section ========== -->
+  
+
+ 
+  <footer class="section-footer">
+    <div class="footer-container container">
+      <div class="content_1">
+        <img src="./public/images/logo__2.png" alt="logo" />
+        <p>
+          Welcome to URBAN STORE, your ultimate destination for
+          cutting-edge gadgets!
+        </p>
+        <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+      </div>
+      <div class="content_2">
+        <h4>SHOPPING</h4>
+        <a href="#">Computer Store</a>
+        <a href="#">Laptop Store</a>
+        <a href="#">Accessories</a>
+        <a href="#">Sales & Discount</a>
+      </div>
+      <div class="content_3">
+        <h4>Experience</h4>
+        <a href="./contact.html">Contact Us</a>
+        <a href="" target="_blank">Payment Method</a>
+        <a href="" target="_blank">Delivery</a>
+        <a href="" target="_blank">Return and Exchange</a>
+      </div>
+      <div class="content_4">
+        <h4>NEWSLETTER</h4>
+        <p>Be the first to know about new<br />arrivals, sales & promos!</p>
+        <div class="f-mail">
+          <input type="email" placeholder="Your Email" />
+          <i class="bx bx-envelope"></i>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="f-design">
+      <div class="f-design-txt">
+        <p><i class="fa-regular fa-copyright"></i> coded by @divineamananand </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

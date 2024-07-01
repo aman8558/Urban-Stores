@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>eCom website</title>
+</head>
+<body>
+  <header class="section-navbar">
+    <section class="top_txt">
+      <div class="head container">
+        <div class="head_txt">
+          <p>Free shipping, 7 days return policy</p>
+        </div>
+       <div class="sign_in_up">
+        <a href="#">SIGN IN</a>
+        <a href="#">SIGN UP</a>
+      </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="./images/logos1.png" alt="logo" class="logo" width="80%" height="auto">
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="products.html">Products</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link add-to-cart-button" id="cartValue" href="/addToCart.html"><i class="fa-solid fa-cart-shopping"></i> 0 </a></li>
+        </ul>
+
+      </nav>
+     
+    </div>
+  </header>
+<!-- ========== Start cart products display Section ========== -->
+ <section class="addToCartElement">
+    <div class="container">
+        <section>
+            <div id="productCartContainer">
+              
+            </div>
+        </section>
+        <section class="productCartTotalElem">
+            <div class="productCartTotalElement">
+
+                <p>Select OFFER summery</p>
+                <div class="productOrderTotal">
+                    <div>
+                        <p>sub Total : </p>
+                        <p class="productSubTotal">0</p>
+                    </div>
+                    <div>
+                        <p>GST :</p>
+                        <p class="productTax">0</p>
+                    </div>
+                    <hr/>
+                    <div>
+                        <p>Final Total :</p>
+                        <p class="productFinalTotal">0</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+
+        </section>
+    </div>
+
+ </section>
+
+ <template id="productCartTemplate">
+    <div class="carts" id="cardValue">
+        <article class="onformation [ card ]">
+            <div>
+                <span class="category"></span>
+
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="" alt="">
+            </div>
+            <h2 class="productName"></h2>
+            <p class="productPrice"></p>
+            <div class="stockElement">
+                <button class="cartDecrement">-</button>
+                <p class="productQuantity" data-quantity="1">1</p>
+               <button class="cartIncrement">+</button>
+            </div>
+
+
+            <button class="add-to-cart-button remove-from-cart-button">Remove</button>
+        </article>
+    </div>
+
+ </template>
+
+<!-- ========== End cart products display Section ========== -->
+
+ 
+  <footer class="section-footer">
+    <div class="footer-container container">
+      <div class="content_1">
+        <img src="./public/images/logo (2).png" alt="logo" />
+        <p>
+          Welcome to URBAN STORE, your ultimate destination for
+          cutting-edge gadgets!
+        </p>
+        <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+      </div>
+      <div class="content_2">
+        <h4>SHOPPING</h4>
+        <a href="#">Computer Store</a>
+        <a href="#">Laptop Store</a>
+        <a href="#">Accessories</a>
+        <a href="#">Sales & Discount</a>
+      </div>
+      <div class="content_3">
+        <h4>Experience</h4>
+        <a href="./contact.html">Contact Us</a>
+        <a href="" target="_blank">Payment Method</a>
+        <a href="" target="_blank">Delivery</a>
+        <a href="" target="_blank">Return and Exchange</a>
+      </div>
+      <div class="content_4">
+        <h4>NEWSLETTER</h4>
+        <p>Be the first to know about new<br />arrivals, sales & promos!</p>
+        <div class="f-mail">
+          <input type="email" placeholder="Your Email" />
+          <i class="bx bx-envelope"></i>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="f-design">
+      <div class="f-design-txt">
+        <p><i class="fa-regular fa-copyright"></i> coded by @divineamananand </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="showAddToCartCards.js"></script>
+</body>
+</html>
